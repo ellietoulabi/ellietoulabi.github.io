@@ -30,6 +30,9 @@
 	<script src='https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.js'></script>
 	<link href='https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.css' rel='stylesheet' />
 
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
 </head>
 
 <body class="bg-triangles">
@@ -62,9 +65,9 @@
 							<!-- Social -->
 							<div class="social">
 								<a class="social__link" href="https://github.com/ellietoulabi"><i
-										class="font-icon icon-github"></i></a>
+										class="fa fa-github fa-lg"></i></a>
 								<a class="social__link" href="https://www.linkedin.com/in/elaheh-toulabi-nejad"><i
-										class="font-icon icon-linkedin2"></i></a>
+										class="fa fa-linkedin fa-lg"></i></a>
 							</div>
 						</div>
 
@@ -74,29 +77,59 @@
 
 								<li class="contacts-block__item" data-toggle="tooltip" data-placement="top"
 									title="E-mail">
-									<a href="mailto:elaheh.toulabi@gmail.com"><i
-											class="font-icon icon-envelope"></i>elaheh.toulabi@gmail.com</a>
+									<a href="mailto:elaheh.toulabi@gmail.com">
+										<i class="fa fa-envelope" style="margin-right:6px;"></i>
+										elaheh.toulabi@gmail.com
+									</a>
 								</li>
 								<li class="contacts-block__item" data-toggle="tooltip" data-placement="top"
 									title="Phone">
-									<i class="font-icon icon-phone"></i>+98 (936) 496-6860
+									<i class="fa fa-phone" style="margin-right:6px;"></i>+98 (936) 496-6860
 								</li>
 								<li class="contacts-block__item" data-toggle="tooltip" data-placement="top"
 									title="Skype">
-									<a href="skype:elitoulabin"><i class="font-icon icon-skype"></i>elitoulabin</a>
+									<a href="skype:elitoulabin"><i class="fa fa-skype"
+											style="margin-right:6px;"></i>elitoulabin</a>
 								</li>
 							</ul>
 
-							<a class="btn" href="#"><i class="font-icon icon-download"></i> Download CV</a>
+							<a class="btn" href="Main_CV.pdf"><i class="fa fa-download " style="margin-right:10px;"></i>
+								Download CV</a>
+
+
 						</div>
 					</div>
 				</aside>
 
 				<!-- Content -->
+
 				<div class="col-12 col-md-12 col-xl-9">
-					<div class="box shadow pb-0">
-						<!-- Menu -->
+
+					<div class="box-inner pb-20">
 						<div class="circle-menu">
+							<div class="hamburger">
+								
+							</div>
+						</div>
+						<div class="inner-menu inner-menu-alt  js-tabs">
+							<ul class="nav">
+								<li class="nav__item"><a class="active" href="#about-tab">About</a></li>
+								<li class="nav__item"><a href="#Education-tab">Education</a></li>
+								<li class="nav__item"><a href="#Experience-tab">Experience</a></li>
+								<li class="nav__item"><a href="#Skills-tab">Skills</a></li>
+								<li class="nav__item"><a href="#Research-tab">Research</a></li>
+								<li class="nav__item"><a href="#Projects-tab">Projects</a></li>
+							</ul>
+						</div>
+
+					</div>
+
+
+					<div class="box shadow pb-0 ">
+
+						<!-- Menu -->
+
+						<!-- <div class="circle-menu">
 							<div class="hamburger">
 								<div class="line"></div>
 								<div class="line"></div>
@@ -109,12 +142,14 @@
 								<li class="nav__item"><a href="#Education-tab">Education</a></li>
 								<li class="nav__item"><a href="#Experience-tab">Experience</a></li>
 								<li class="nav__item"><a href="#Skills-tab">Skills</a></li>
+								<li class="nav__item"><a href="#Research-tab">Research</a></li>
 								<li class="nav__item"><a href="#Projects-tab">Projects</a></li>
 							</ul>
-						</div>
+						</div> -->
+
+
 
 						<div class="content" id="content">
-
 
 							<!-- About -->
 							<div id="about-tab" class="tabcontent active">
@@ -132,52 +167,23 @@
 								<div class="box-inner pb-0">
 									<h2 class="title title--h3">Research Interests</h2>
 									<div class="row">
-										<!-- Case Item -->
-										<div class="col-12 col-lg-6">
-											<div class="case-item box box__second">
-												<div>
-													<p class="title title--h5">Artificial Intelligence</p>
-												</div>
-											</div>
-										</div>
+										<p class="title title--h5 col-12 col-lg-12">• Artificial Intelligence</p>
 
-										<!-- Case Item -->
-										<div class="col-12 col-lg-6">
-											<div class="case-item box box__second">
-												<div>
-													<p class="title title--h5">Machine Learning and Deep Learning</p>
-												</div>
-											</div>
-										</div>
-										<!-- Case Item -->
-										<div class="col-12 col-lg-6">
-											<div class="case-item box box__second">
-												<div>
-													<p class="title title--h5">Biomedical Sciences and Health-related
-														Subjects</p>
-												</div>
-											</div>
-										</div>
-										<!-- Case Item -->
-										<div class="col-12 col-lg-6">
-											<div class="case-item box box__second">
-												<div>
-													<p class="title title--h5">Computational Biology </p>
-												</div>
-											</div>
-										</div>
-										<!-- Case Item -->
-										<div class="col-12 col-lg-6">
-											<div class="case-item box box__second">
-												<div>
-													<p class="title title--h5">Neuroscience </p>
-												</div>
-											</div>
-										</div>
+										<p class="title title--h5 col-12 col-lg-12">• Machine Learning, deep learning,
+											and their
+											applications in biomedical sciences and health-related fields
+										</p>
+
+										<p class="title title--h5 col-12 col-lg-12">• Computational Biology </p>
+
+										<p class="title title--h5 col-12 col-lg-12">• Neuroscience </p>
+
 									</div>
+
 								</div>
 
-								<!-- Testimonials -->
+
+								<!-- References -->
 								<div class="box-inner box-inner--white">
 									<h2 class="title title--h3">References</h2>
 
@@ -239,6 +245,7 @@
 										<div class="swiper-pagination"></div>
 									</div>
 								</div>
+
 							</div>
 							<!-- End About -->
 
@@ -246,22 +253,26 @@
 							<!-- Education-->
 							<div id="Education-tab" class="tabcontent">
 								<div class="pb-3">
-									<h1 class="title title--h1 first-title title__separate">Education</h1>
+									<h1 class="title title--h1 first-title title__separate"> Education</h1>
 								</div>
 
 								<div class="pb-0">
 									<div class="row">
 										<div class="col-12 col-lg-12">
-											<h2 class="title title--h3"><img class="title-icon"
-													src="assets/icons/icon-education.svg" alt="" /> Education</h2>
+											<!-- <h2 class="title title--h3"><img class="title-icon"
+													src="assets/icons/icon-education.svg" alt="" /> Education</h2> -->
 											<div class="timeline">
 												<!-- Item -->
 												<article class="timeline__item">
 													<h5 class="title title--h5 timeline__title">Bachelor of Science
-														in Computer Engineering</h5>
-													<p class="title title--h5 timeline__title"><i>Department of
+														in Computer Engineering
+													</h5>
+													<p class="title title--h5 timeline__title">
+														<i>Department of
 															Electrical and Computer Engineering, Isfahan University
-															of Technology</i></p>
+															of Technology
+														</i>
+													</p>
 
 													<span class="timeline__period">Sep 2017 — Sep 2021</span>
 													<p class="timeline__description">
@@ -291,8 +302,8 @@
 								</div>
 
 								<div class="col-12 col-lg-12">
-									<h2 class="title title--h3"><img class="title-icon"
-											src="assets/icons/icon-experience.svg" alt="" /> Experience</h2>
+									<!-- <h2 class="title title--h3"><img class="title-icon"
+											src="assets/icons/icon-experience.svg" alt="" /> Experience</h2> -->
 									<div class="timeline">
 										<!-- Item -->
 										<article class="timeline__item">
@@ -558,106 +569,218 @@
 								<!-- End About -->
 
 
-								<!-- BLOG -->
-								<div id="blog-tab" class="tabcontent">
-									<div class="pb-2">
-										<h1 class="title title--h1 first-title title__separate">Blog</h1>
-									</div>
-
-									<div class="news-grid pb-0">
-										<!-- Post -->
-										<article class="news-item box">
-											<div class="news-item__image-wrap overlay overlay--45">
-												<div class="news-item__date">Sep 16, 2019</div>
-												<a class="news-item__link" href="single-post.html"></a>
-												<img class="cover lazyload" src="assets/img/image_02.jpg" alt="" />
-											</div>
-											<div class="news-item__caption">
-												<h2 class="title title--h4">Design Conferences in 2019</h2>
-												<p>Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.</p>
-											</div>
-										</article>
-
-										<!-- Post -->
-										<article class="news-item box">
-											<div class="news-item__image-wrap overlay overlay--45">
-												<div class="news-item__date">Sep 15, 2019</div>
-												<a class="news-item__link" href="single-post.html"></a>
-												<img class="cover lazyload" src="assets/img/image_06.jpg" alt="" />
-											</div>
-											<div class="news-item__caption">
-												<h2 class="title title--h4">Best Fonts Every Designer</h2>
-												<p>Sed ut perspiciatis, nam libero tempore, cum soluta nobis est
-													eligendi.
-												</p>
-											</div>
-										</article>
-
-										<!-- Post -->
-										<article class="news-item box">
-											<div class="news-item__image-wrap overlay overlay--45">
-												<div class="news-item__date">Sep 14, 2019</div>
-												<a class="news-item__link" href="single-post.html"></a>
-												<img class="cover lazyload" src="assets/img/image_08.jpg" alt="" />
-											</div>
-											<div class="news-item__caption">
-												<h2 class="title title--h4">Design Digest #80</h2>
-												<p>Excepteur sint occaecat cupidatat no proident, quis nostrum
-													exercitationem ullam corporis suscipit.</p>
-											</div>
-										</article>
-
-										<!-- Post -->
-										<article class="news-item box">
-											<div class="news-item__image-wrap overlay overlay--45">
-												<div class="news-item__date">Sep 13, 2019</div>
-												<a class="news-item__link" href="single-post.html"></a>
-												<img class="cover lazyload" src="assets/img/image_07.jpg" alt="" />
-											</div>
-											<div class="news-item__caption">
-												<h2 class="title title--h4">UI Interactions of the week</h2>
-												<p>Enim ad minim veniam, consectetur adipiscing elit, quis nostrud
-													exercitation ullamco laboris nisi.</p>
-											</div>
-										</article>
-
-										<!-- Post -->
-										<article class="news-item box">
-											<div class="news-item__image-wrap overlay overlay--45">
-												<div class="news-item__date">Sep 12, 2019</div>
-												<a class="news-item__link" href="single-post.html"></a>
-												<img class="cover lazyload" src="assets/img/image_05.jpg" alt="" />
-											</div>
-											<div class="news-item__caption">
-												<h2 class="title title--h4">The Forgotten Art of Spacing</h2>
-												<p>Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore
-													magna aliqua.</p>
-											</div>
-										</article>
-
-										<!-- Post -->
-										<article class="news-item box">
-											<div class="news-item__image-wrap overlay overlay--45">
-												<div class="news-item__date">Sep 15, 2019</div>
-												<a class="news-item__link" href="single-post.html"></a>
-												<img class="cover lazyload" src="assets/img/image_01.jpg" alt="" />
-											</div>
-											<div class="news-item__caption">
-												<h2 class="title title--h4">Design Digest #79</h2>
-												<p>Optio cumque nihil impedit uo minus quod maxime placeat, velit esse
-													cillum.</p>
-											</div>
-										</article>
-									</div>
+								<!-- BLOG
+							<div id="blog-tab" class="tabcontent">
+								<div class="pb-2">
+									<h1 class="title title--h1 first-title title__separate">Blog</h1>
 								</div>
+
+								<div class="news-grid pb-0">
+									<article class="news-item box">
+										<div class="news-item__image-wrap overlay overlay--45">
+											<div class="news-item__date">Sep 16, 2019</div>
+											<a class="news-item__link" href="single-post.html"></a>
+											<img class="cover lazyload" src="assets/img/image_02.jpg" alt="" />
+										</div>
+										<div class="news-item__caption">
+											<h2 class="title title--h4">Design Conferences in 2019</h2>
+											<p>Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.</p>
+										</div>
+									</article>
+
+									<article class="news-item box">
+										<div class="news-item__image-wrap overlay overlay--45">
+											<div class="news-item__date">Sep 15, 2019</div>
+											<a class="news-item__link" href="single-post.html"></a>
+											<img class="cover lazyload" src="assets/img/image_06.jpg" alt="" />
+										</div>
+										<div class="news-item__caption">
+											<h2 class="title title--h4">Best Fonts Every Designer</h2>
+											<p>Sed ut perspiciatis, nam libero tempore, cum soluta nobis est
+												eligendi.
+											</p>
+										</div>
+									</article>
+
+									<article class="news-item box">
+										<div class="news-item__image-wrap overlay overlay--45">
+											<div class="news-item__date">Sep 14, 2019</div>
+											<a class="news-item__link" href="single-post.html"></a>
+											<img class="cover lazyload" src="assets/img/image_08.jpg" alt="" />
+										</div>
+										<div class="news-item__caption">
+											<h2 class="title title--h4">Design Digest #80</h2>
+											<p>Excepteur sint occaecat cupidatat no proident, quis nostrum
+												exercitationem ullam corporis suscipit.</p>
+										</div>
+									</article>
+
+									<article class="news-item box">
+										<div class="news-item__image-wrap overlay overlay--45">
+											<div class="news-item__date">Sep 13, 2019</div>
+											<a class="news-item__link" href="single-post.html"></a>
+											<img class="cover lazyload" src="assets/img/image_07.jpg" alt="" />
+										</div>
+										<div class="news-item__caption">
+											<h2 class="title title--h4">UI Interactions of the week</h2>
+											<p>Enim ad minim veniam, consectetur adipiscing elit, quis nostrud
+												exercitation ullamco laboris nisi.</p>
+										</div>
+									</article>
+
+									<article class="news-item box">
+										<div class="news-item__image-wrap overlay overlay--45">
+											<div class="news-item__date">Sep 12, 2019</div>
+											<a class="news-item__link" href="single-post.html"></a>
+											<img class="cover lazyload" src="assets/img/image_05.jpg" alt="" />
+										</div>
+										<div class="news-item__caption">
+											<h2 class="title title--h4">The Forgotten Art of Spacing</h2>
+											<p>Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore
+												magna aliqua.</p>
+										</div>
+									</article>
+
+									<article class="news-item box">
+										<div class="news-item__image-wrap overlay overlay--45">
+											<div class="news-item__date">Sep 15, 2019</div>
+											<a class="news-item__link" href="single-post.html"></a>
+											<img class="cover lazyload" src="assets/img/image_01.jpg" alt="" />
+										</div>
+										<div class="news-item__caption">
+											<h2 class="title title--h4">Design Digest #79</h2>
+											<p>Optio cumque nihil impedit uo minus quod maxime placeat, velit esse
+												cillum.</p>
+										</div>
+									</article>
+								</div>
+							</div> -->
 
 							</div>
 
-							<!-- Footer -->
-							<footer class="footer">© 2019 vCard</footer>
-						</div>
-					</div>
+							<!-- Research -->
+							<div id="Research-tab" class="tabcontent active">
+								<div class="pb-0 pb-sm-2">
+									<h1 class="title title--h1 first-title title__separate">Research</h1>
+
+									<p>• English: TOEFL iBT exam will be taken soon.</p>
+
+
+								</div>
+							</div>
+							<!-- End Research -->
+
+							<!-- Project -->
+							<div id="Projects-tab" class="tabcontent active">
+								<div class="pb-0 pb-sm-2">
+									<h1 class="title title--h1 first-title title__separate">Projects</h1>
+
+									<p>• English: TOEFL iBT exam will be taken soon.</p>
+
+
+								</div>
+							</div>
+							<!-- End Project -->
+
+
+							<!-- BLOG
+	<div id="blog-tab" class="tabcontent">
+		<div class="pb-2">
+			<h1 class="title title--h1 first-title title__separate">Blog</h1>
+		</div>
+
+		<div class="news-grid pb-0">
+			<article class="news-item box">
+				<div class="news-item__image-wrap overlay overlay--45">
+					<div class="news-item__date">Sep 16, 2019</div>
+					<a class="news-item__link" href="single-post.html"></a>
+					<img class="cover lazyload" src="assets/img/image_02.jpg" alt="" />
 				</div>
+				<div class="news-item__caption">
+					<h2 class="title title--h4">Design Conferences in 2019</h2>
+					<p>Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.</p>
+				</div>
+			</article>
+
+			<article class="news-item box">
+				<div class="news-item__image-wrap overlay overlay--45">
+					<div class="news-item__date">Sep 15, 2019</div>
+					<a class="news-item__link" href="single-post.html"></a>
+					<img class="cover lazyload" src="assets/img/image_06.jpg" alt="" />
+				</div>
+				<div class="news-item__caption">
+					<h2 class="title title--h4">Best Fonts Every Designer</h2>
+					<p>Sed ut perspiciatis, nam libero tempore, cum soluta nobis est
+						eligendi.
+					</p>
+				</div>
+			</article>
+
+			<article class="news-item box">
+				<div class="news-item__image-wrap overlay overlay--45">
+					<div class="news-item__date">Sep 14, 2019</div>
+					<a class="news-item__link" href="single-post.html"></a>
+					<img class="cover lazyload" src="assets/img/image_08.jpg" alt="" />
+				</div>
+				<div class="news-item__caption">
+					<h2 class="title title--h4">Design Digest #80</h2>
+					<p>Excepteur sint occaecat cupidatat no proident, quis nostrum
+						exercitationem ullam corporis suscipit.</p>
+				</div>
+			</article>
+
+			<article class="news-item box">
+				<div class="news-item__image-wrap overlay overlay--45">
+					<div class="news-item__date">Sep 13, 2019</div>
+					<a class="news-item__link" href="single-post.html"></a>
+					<img class="cover lazyload" src="assets/img/image_07.jpg" alt="" />
+				</div>
+				<div class="news-item__caption">
+					<h2 class="title title--h4">UI Interactions of the week</h2>
+					<p>Enim ad minim veniam, consectetur adipiscing elit, quis nostrud
+						exercitation ullamco laboris nisi.</p>
+				</div>
+			</article>
+
+			<article class="news-item box">
+				<div class="news-item__image-wrap overlay overlay--45">
+					<div class="news-item__date">Sep 12, 2019</div>
+					<a class="news-item__link" href="single-post.html"></a>
+					<img class="cover lazyload" src="assets/img/image_05.jpg" alt="" />
+				</div>
+				<div class="news-item__caption">
+					<h2 class="title title--h4">The Forgotten Art of Spacing</h2>
+					<p>Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore
+						magna aliqua.</p>
+				</div>
+			</article>
+
+			<article class="news-item box">
+				<div class="news-item__image-wrap overlay overlay--45">
+					<div class="news-item__date">Sep 15, 2019</div>
+					<a class="news-item__link" href="single-post.html"></a>
+					<img class="cover lazyload" src="assets/img/image_01.jpg" alt="" />
+				</div>
+				<div class="news-item__caption">
+					<h2 class="title title--h4">Design Digest #79</h2>
+					<p>Optio cumque nihil impedit uo minus quod maxime placeat, velit esse
+						cillum.</p>
+				</div>
+			</article>
+		</div>
+	</div> -->
+
+						</div>
+
+
+
+					</div>
+					<!-- Footer -->
+					<!-- <footer class="footer">© 2019 vCard</footer> -->
+
+				</div>
+			</div>
+		</div>
 	</main>
 
 	<div class="back-to-top"></div>
@@ -675,20 +798,20 @@
 	</svg>
 
 	<!-- Demo Menu -->
-	<div class="btnSlideNav slideOpen"></div>
+	<!-- <div class="btnSlideNav slideOpen"></div>
 	<div class="btnSlideNav slideClose"></div>
 	<ul class="slideNav">
 		<li class="slideNav__item rtl-mode">
 			<h4 class="title title--5">More pages</h4> <a href="rtl/about.html">RTL</a>
 		</li>
-		<li class="slideNav__item"><a href="one-page.html">1. Single page</a></li>
-		<li class="slideNav__item"><a href="background-3.html">2. Background peach</a></li>
-		<li class="slideNav__item"><a href="background-2.html">3. Background green</a></li>
-		<li class="slideNav__item"><a href="background-5.html">4. Background green 2</a></li>
-		<li class="slideNav__item"><a href="background-4.html">5. Background triangles</a></li>
-		<li class="slideNav__item"><a href="menu_alternative/about.html">6. Alternative menu</a></li>
+		<li class="slideNav__item"><a class="active" href="#about-tab">About</a></li>
+		<li class="slideNav__item"><a href="#Education-tab">Education</a></li>
+		<li class="slideNav__item"><a href="#Experience-tab">Experience</a></li>
+		<li class="slideNav__item"><a href="#Skills-tab">Skills</a></li>
+		<li class="slideNav__item"><a href="#Research-tab">Research</a></li>
+		<li class="slideNav__item"><a href="#Projects-tab">Projects</a></li>
 	</ul>
-	<div class="overlay-slideNav"></div>
+	<div class="overlay-slideNav"></div> -->
 	<!-- Demo Menu -->
 
 	<!-- JavaScripts -->
