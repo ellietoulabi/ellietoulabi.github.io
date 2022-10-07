@@ -26,26 +26,7 @@
 </head>
 
 <body>
-  
-  
-  <?php
-
-// set your e-mail address first, where you'll receive the notifications
-$yourEmailAddress = "ellietoulabi@gmail.com";
-
-$emailSubject = "New Visitor on Webpage";
-$remoteIpAddress = $_SERVER['REMOTE_ADDR'];
-$emailContent = "Someone visited your webpage. IP address:".$remoteIpAddress;
-
-// send the message
-mail($yourEmailAddress, $emailSubject, $emailContent);
-
-?>
-  
-  
-  
-  
-  
+ 
   <!-- Loading animation -->
   <div class="preloader">
     <div class="preloader-animation">
@@ -992,7 +973,21 @@ mail($yourEmailAddress, $emailSubject, $emailContent);
   </div>
 
 
+<script>  
+  function httpGetAsync(url, callback) {
+    var xmlHttp = new XMLHttpRequest();
+    xmlHttp.onreadystatechange = function() {
+        if (xmlHttp.readyState === 4 && xmlHttp.status === 200)
+        callback(xmlHttp.responseText);
+    }
+    xmlHttp.open("GET", url, true); // true for asynchronous
+    xmlHttp.send(null);
+}
 
+var url = "https://emailvalidation.abstractapi.com/v1/?api_key=7ff4b37b889e425f969f4daaa21d20bc&email=elitoulabin@gmail.com"
+
+httpGetAsync(url)
+ </script>
 
   <script src="js/page-transition.js"></script>
   <script src="js/imagesloaded.pkgd.min.js"></script>
