@@ -15,10 +15,10 @@
   }
 
   a {
-    text-decoration: underline;
+    // text-decoration: underline;
 
     &:hover {
-      text-decoration: underline;
+      // text-decoration: underline;
 
       img {
         box-shadow: 0 0 10px rgba(#000, 0.25);
@@ -79,9 +79,9 @@
     box-shadow: 0 0 10px rgba(#000, 0.25);
   }
 
-  .archive__item-title {
-    text-decoration: underline;
-  }
+  // .archive__item-title {
+  //   // text-decoration: underline;
+  // }
 }
 
 
