@@ -4,7 +4,7 @@
  *  Square icons designed to be used alongside Font Awesome square icons - https://fortawesome.github.io/Font-Awesome/
  *  Licenses - Font: SIL OFL 1.1, CSS: MIT License
  */
-@font-face {
+/* @font-face {
     font-family: 'Academicons';
     font-style: normal;
     font-weight: 400;
@@ -25,7 +25,20 @@
   font-variant: normal;
   text-rendering: auto;
   line-height: 1;
+} */
+
+.ai {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 400;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
 }
+
 .ai-academia:before {
   content: "\e9af";
 }
