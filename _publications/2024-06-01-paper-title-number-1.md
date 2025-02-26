@@ -8,6 +8,5 @@ venue: 'Expert Systems with Applications'
 paperurl: 'https://doi.org/10.1038/s41598-024-78304-7'
 citation: 'Elaheh Toulabinejad, Mohammad Mirsafaei, Alireza Basiri. (2024). &quot;Supervised discretization of continuous-valued attributes for classification using RACER algorithm.&quot; <i>Expert Systems with Applications</i>.'
 ---
-[Download paper here](https://doi.org/10.1038/s41598-024-78304-7)
 
-Recommended citation: Elaheh Toulabinejad, Mohammad Mirsafaei, Alireza Basiri. (2024). "Supervised discretization of continuous-valued attributes for classification using RACER algorithm." <i>Expert Systems with Applications</i>.
+Recommended citation: <b>Elaheh Toulabinejad</b>, Mohammad Mirsafaei, Alireza Basiri. (2024). "Supervised discretization of continuous-valued attributes for classification using RACER algorithm." <i>Expert Systems with Applications</i>.
