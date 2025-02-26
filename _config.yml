@@ -21,11 +21,11 @@ repository               : "academicpages/academicpages.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "profile.jpeg"
   name             : "Elaheh Toulabinejad"
   pronouns         : # example: "she/her"  
   bio              : "Master Student, University of Alberta "
-  location         : "Edmonton, CA"
+  location         : "Edmonton, Alberta, Canada"
   employer         : "University of Alberta"
   uri              : # URL
   email            : "toulabin@ualberta.ca" 
