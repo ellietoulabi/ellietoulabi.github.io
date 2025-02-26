@@ -1,6 +1,7 @@
 ---
 title: " A deep learning model of dorsal and ventral visual streams for DVSD"
 collection: publications
+category: manuscripts
 permalink: /publication/2024-11-01-paper-title-number-2
 date: 2024-11-01
 venue: 'Scientific Reports (Nature Publishing Group)'

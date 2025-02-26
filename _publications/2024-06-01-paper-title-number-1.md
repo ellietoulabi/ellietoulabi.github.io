@@ -1,6 +1,7 @@
 ---
 title: "Supervised discretization of continuous-valued attributes for classification using RACER algorithm"
 collection: publications
+category: manuscripts
 permalink: /publication/2024-06-01-paper-title-number-1
 date: 2024-06-01
 venue: 'Expert Systems with Applications'
