@@ -413,10 +413,10 @@ $accent-color: #96B6C5 !default;
   }
 
   .experience-section {
-    background: mix($background-color, $accent-color, 92%);
-    border: 1px solid mix($accent-color, $border-color, 45%);
+    background: mix($background-color, $border-color, 80%);
+    border: 1px solid mix($border-color, $background-color, 40%);
     border-radius: $border-radius;
-    box-shadow: 0 12px 28px rgba($accent-color, 0.18);
+    box-shadow: 0 5px 18px rgba($gray, 0.12);
     padding: 1.25em;
 
     @include breakpoint($large) {
@@ -433,7 +433,7 @@ $accent-color: #96B6C5 !default;
   &__meta {
     font-style: italic;
     margin-bottom: 0.75em;
-    color: mix($accent-color, #000, 25%);
+    color: mix(#fff, $gray, 20%);
     font-size: inherit;
   }
 
@@ -460,10 +460,10 @@ $accent-color: #96B6C5 !default;
   }
 
   .project {
-    background: mix($background-color, $accent-color, 92%);
-    border: 1px solid mix($accent-color, $border-color, 45%);
+    background: mix($background-color, $border-color, 80%);
+    border: 1px solid mix($border-color, $background-color, 40%);
     border-radius: $border-radius;
-    box-shadow: 0 12px 28px rgba($accent-color, 0.18);
+    box-shadow: 0 5px 18px rgba($gray, 0.12);
     padding: 1.25em;
 
     @include breakpoint($large) {
@@ -479,7 +479,7 @@ $accent-color: #96B6C5 !default;
     a {
       font-size: $type-size-7;
       margin-left: 0.5em;
-      color: mix($accent-color, #fff, 40%);
+      color: mix(#fff, $gray, 25%);
 
       &:hover {
         color: $accent-color;
@@ -490,13 +490,15 @@ $accent-color: #96B6C5 !default;
   &__meta {
     font-style: italic;
     margin-bottom: 0.75em;
-    color: mix($accent-color, #000, 25%);
+    color: mix(#fff, $gray, 20%);
     font-size: inherit;
   }
 
   ul {
     margin: 0;
     padding-left: 1.1em;
+    font-size: inherit;
+    line-height: inherit;
   }
 
   li {
@@ -516,10 +518,10 @@ $accent-color: #96B6C5 !default;
   }
 
   section {
-    background: mix($background-color, $accent-color, 92%);
-    border: 1px solid mix($accent-color, $border-color, 45%);
+    background: mix($background-color, $border-color, 80%);
+    border: 1px solid mix($border-color, $background-color, 40%);
     border-radius: $border-radius;
-    box-shadow: 0 12px 28px rgba($accent-color, 0.18);
+    box-shadow: 0 5px 18px rgba($gray, 0.12);
     padding: 1.25em;
 
     @include breakpoint($large) {
@@ -555,10 +557,10 @@ $accent-color: #96B6C5 !default;
   }
 
   section {
-    background: mix($background-color, $accent-color, 92%);
-    border: 1px solid mix($accent-color, $border-color, 45%);
+    background: mix($background-color, $border-color, 80%);
+    border: 1px solid mix($border-color, $background-color, 40%);
     border-radius: $border-radius;
-    box-shadow: 0 12px 28px rgba($accent-color, 0.18);
+    box-shadow: 0 5px 18px rgba($gray, 0.12);
     padding: 1.25em;
 
     @include breakpoint($large) {
@@ -585,11 +587,11 @@ $accent-color: #96B6C5 !default;
   &__dates {
     float: right;
     font-style: italic;
-    color: mix($accent-color, #000, 25%);
+    color: mix(#fff, $gray, 20%);
   }
 
   .ta-experience {
-    border-top: 1px solid mix($accent-color, $border-color, 45%);
+    border-top: 1px solid mix($border-color, $background-color, 40%);
     padding-top: 1em;
     margin-top: 1em;
   }
