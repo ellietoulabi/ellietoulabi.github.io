@@ -11,7 +11,7 @@ author_profile: true
   <section class="project">
     <div class="project-header">
       <h3>Decoding Neural Representations of Sentences in Individuals with Autism</h3>
-      <a class="project-link" href="https://github.com/ellietoulabi/CMPUT605" target="_blank" rel="noopener noreferrer">View Project</a>
+      <a class="project-link" href="https://github.com/ellietoulabi/CMPUT605" target="_blank" rel="noopener noreferrer">GitHub</a>
     </div>
     <ul>
       <li>Integrated ML/NLP with fMRI to study figurative-language processing in autistic and non-autistic groups.</li>
@@ -23,7 +23,7 @@ author_profile: true
   <section class="project">
     <div class="project-header">
       <h3>Sentiment Detection through EEG Signal Analysis</h3>
-      <a class="project-link" href="https://github.com/ellietoulabi/eeg_emotion_detection" target="_blank" rel="noopener noreferrer">View Project</a>
+      <a class="project-link" href="https://github.com/ellietoulabi/eeg_emotion_detection" target="_blank" rel="noopener noreferrer">GitHub</a>
     </div>
     <ul>
       <li>Applied ML classification methods to detect emotions from EEG signals in the SEED dataset.</li>
@@ -34,7 +34,7 @@ author_profile: true
   <section class="project">
     <div class="project-header">
       <h3>Loss of Plasticity</h3>
-      <a class="project-link" href="https://github.com/ellietoulabi/Loss-of-Plasticity" target="_blank" rel="noopener noreferrer">View Project</a>
+      <a class="project-link" href="https://github.com/ellietoulabi/Loss-of-Plasticity" target="_blank" rel="noopener noreferrer">GitHub</a>
     </div>
     <ul>
       <li>Explored how Concatenate ReLU and Leaky ReLU activation functions mitigate plasticity loss in DQN.</li>
@@ -46,7 +46,7 @@ author_profile: true
   <section class="project">
     <div class="project-header">
       <h3>Birth Weight Prediction</h3>
-      <a class="project-link" href="https://github.com/ellietoulabi/Weight-at-Birth-Prediction" target="_blank" rel="noopener noreferrer">View Project</a>
+      <a class="project-link" href="https://github.com/ellietoulabi/Weight-at-Birth-Prediction" target="_blank" rel="noopener noreferrer">GitHub</a>
     </div>
     <ul>
       <li>Led a CRISP-DM data-mining pipeline to predict newborn birth weight and classify risk.</li>
