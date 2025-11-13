@@ -5,6 +5,6 @@ category: manuscripts
 permalink: /publication/2024-06-01-paper-title-number-1
 date: 2024-06-01
 venue: 'Expert Systems with Applications (Elsevier publishing group)'
-paperurl: 'https://doi.org/10.1038/s41598-024-78304-7'
+paperurl: 'https://doi.org/10.1016/j.eswa.2023.121203'
 citation: '<b>Elaheh Toulabinejad</b>, Mohammad Mirsafaei, Alireza Basiri.'
 ---
