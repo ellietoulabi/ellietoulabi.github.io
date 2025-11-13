@@ -131,6 +131,11 @@ $accent-color: #ff5fa2 !default;
   }
 }
 
+.page__content .list__item {
+  padding-right: 0;
+  padding-left: 0;
+}
+
 .archive__item-excerpt {
   margin-top: 0;
   font-size: 0.9rem;
