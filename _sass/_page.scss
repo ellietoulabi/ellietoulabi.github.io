@@ -586,7 +586,7 @@ $accent-color: #96B6C5 !default;
 
   &__dates {
     font-style: italic;
-    color: #000;
+    color: $text-color;
     margin-left: 0.35em;
   }
 
