@@ -399,3 +399,37 @@
   font-size: $type-size-6;
   text-transform: uppercase;
 }
+
+.teaching-page {
+  font-size: 1em;
+  line-height: 1.7;
+
+  h4 {
+    font-size: $type-size-5;
+    margin-bottom: 0.25em;
+  }
+
+  p {
+    font-size: $type-size-6;
+    margin-bottom: 1em;
+  }
+
+  &__institution {
+    font-style: italic;
+    margin-bottom: 0.25em;
+  }
+
+  &__dates {
+    float: right;
+    font-style: italic;
+  }
+
+  .ta-experience {
+    border-bottom: 1px solid mix($border-color, $background-color, 40%);
+    padding-bottom: 1em;
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+}
