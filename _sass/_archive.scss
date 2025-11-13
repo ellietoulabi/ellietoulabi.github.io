@@ -125,15 +125,30 @@ $accent-color: #ff5fa2 !default;
 /* remove border*/
 .page__content {
 
+  .list__item {
+    padding-left: 0;
+    padding-right: 0;
+
+    @include breakpoint($medium) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    @include breakpoint($large) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    @include breakpoint($x-large) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
   .archive__item-title {
     margin-top: 1em;
     border-bottom: none;
   }
-}
-
-.page__content .list__item {
-  padding-right: 0;
-  padding-left: 0;
 }
 
 .archive__item-excerpt {
