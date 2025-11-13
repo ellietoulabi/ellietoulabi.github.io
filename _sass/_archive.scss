@@ -57,21 +57,21 @@
 
 .archive__item-meta {
   margin: 0.5em 0;
-  font-size: $type-size-6;
+  font-size: 0.9rem;
   color: mix(#fff, $gray, 25%);
   font-style: normal;
 }
 
 .archive__item-citation {
   margin: 0.75em 0;
-  font-size: $type-size-6;
-  line-height: 1.6;
+  font-size: 0.9rem;
+  line-height: 1.7;
   color: mix(#fff, $gray, 15%);
 }
 
 .archive__item-links {
   margin: 0.75em 0 1.5em 0;
-  font-size: $type-size-6;
+  font-size: 0.9rem;
   
   a {
     margin-right: 0.75em;
@@ -93,7 +93,7 @@
   
   p {
     margin: 0;
-    font-size: $type-size-6;
+    font-size: 0.9rem;
   }
 }
 
@@ -122,7 +122,7 @@
 
 .archive__item-excerpt {
   margin-top: 0;
-  font-size: $type-size-6;
+  font-size: 0.9rem;
 
   & + p {
     text-indent: 0;
