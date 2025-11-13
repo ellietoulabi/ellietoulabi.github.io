@@ -471,27 +471,28 @@ $accent-color: #96B6C5 !default;
     }
   }
 
-  h3 {
-    font-size: 1.05rem;
+  .project-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
     margin: 0.2rem 0 0.4rem 0.2rem;
-    color: $accent-color;
 
-    a {
-      font-size: $type-size-7;
-      margin-left: 0.5em;
-      color: mix(#fff, $gray, 25%);
-
-      &:hover {
-        color: $accent-color;
-      }
+    h3 {
+      font-size: 1.05rem;
+      margin: 0;
+      color: $accent-color;
     }
   }
 
-  &__meta {
-    font-style: italic;
-    margin-bottom: 0.65em;
-    color: mix(#fff, $gray, 20%);
-    font-size: inherit;
+  .project-link {
+    font-size: $type-size-6;
+    color: $accent-color;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 
   ul {
