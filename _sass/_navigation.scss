@@ -200,6 +200,10 @@
     color: #fff;
     cursor: pointer;
     z-index: 100;
+
+    &:hover {
+      background-color: mix(#000, $primary-color, 20%);
+    }
   }
 
   .visible-links {
@@ -308,6 +312,15 @@
       }
     }
   }
+}
+
+.masthead__menu-item--active > a,
+.greedy-nav a.is-active {
+  background-color: #ff5fa2;
+  color: #fff !important;
+  border-radius: $border-radius;
+  padding: 0.5rem 0.75rem;
+  margin: 0 0.5rem;
 }
 
 
