@@ -7,16 +7,33 @@
         <button><div class="navicon"></div></button>
         <ul class="visible-links">
           <li class="masthead__menu-item masthead__menu-item--lg"><a href="{{ base_path }}/">{{ site.title }}</a></li>
+          {% assign current_url = page.permalink | default: page.url %}
+          {% assign current_url = current_url | replace: 'index.html', '' %}
+          {% if current_url == '' %}
+            {% assign current_url = '/' %}
+          {% endif %}
+          {% unless current_url == '/' %}
+            {% unless current_url | slice: -1 == '/' %}
+              {% assign current_url = current_url | append: '/' %}
+            {% endunless %}
+          {% endunless %}
           {% for link in site.data.navigation.main %}
             {% if link.url contains 'http' %}
               {% assign domain = '' %}
             {% else %}
               {% assign domain = base_path %}
             {% endif %}
+            {% assign link_path = link.url | replace: 'index.html', '' %}
+            {% if link_path == '' %}
+              {% assign link_path = '/' %}
+            {% endif %}
+            {% unless link_path == '/' %}
+              {% unless link_path | slice: -1 == '/' %}
+                {% assign link_path = link_path | append: '/' %}
+              {% endunless %}
+            {% endunless %}
             {% assign is_current = false %}
-            {% assign link_url = link.url %}
-            {% assign current_url = page.url %}
-            {% if current_url == link_url or current_url == link_url | append: 'index.html' or current_url == link_url | append: '/' or current_url | append: '/' == link_url or current_url | append: 'index.html' == link_url %}
+            {% if current_url == link_path %}
               {% assign is_current = true %}
             {% endif %}
             <li class="masthead__menu-item{% if is_current %} masthead__menu-item--active{% endif %}"><a{% if is_current %} class="is-active"{% endif %} href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
