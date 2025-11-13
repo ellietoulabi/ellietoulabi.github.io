@@ -406,10 +406,10 @@ $accent-color: #96B6C5 !default;
   font-size: 0.9rem;
   line-height: 1.75;
   display: grid;
-  gap: 2rem;
+  gap: 1.75rem;
 
   @include breakpoint($large) {
-    gap: 2.25rem;
+    gap: 2rem;
   }
 
   .experience-section {
@@ -417,10 +417,10 @@ $accent-color: #96B6C5 !default;
     border: 1px solid mix($border-color, $background-color, 40%);
     border-radius: $border-radius;
     box-shadow: 0 5px 18px rgba($gray, 0.12);
-    padding: 1.25em;
+    padding: 1.1em 1.25em;
 
     @include breakpoint($large) {
-      padding: 1.5em 2em;
+      padding: 1.35em 1.75em;
     }
   }
 
@@ -432,7 +432,7 @@ $accent-color: #96B6C5 !default;
 
   &__meta {
     font-style: italic;
-    margin-bottom: 0.75em;
+    margin-bottom: 0.65em;
     color: mix(#fff, $gray, 20%);
     font-size: inherit;
   }
@@ -445,7 +445,7 @@ $accent-color: #96B6C5 !default;
   }
 
   li {
-    margin-bottom: 0.4em;
+    margin-bottom: 0.35em;
   }
 }
 
@@ -453,10 +453,10 @@ $accent-color: #96B6C5 !default;
   font-size: 0.9rem;
   line-height: 1.75;
   display: grid;
-  gap: 2rem;
+  gap: 1.75rem;
 
   @include breakpoint($large) {
-    gap: 2.25rem;
+    gap: 2rem;
   }
 
   .project {
@@ -464,10 +464,10 @@ $accent-color: #96B6C5 !default;
     border: 1px solid mix($border-color, $background-color, 40%);
     border-radius: $border-radius;
     box-shadow: 0 5px 18px rgba($gray, 0.12);
-    padding: 1.25em;
+    padding: 1.1em 1.25em;
 
     @include breakpoint($large) {
-      padding: 1.5em 2em;
+      padding: 1.35em 1.75em;
     }
   }
 
@@ -489,7 +489,7 @@ $accent-color: #96B6C5 !default;
 
   &__meta {
     font-style: italic;
-    margin-bottom: 0.75em;
+    margin-bottom: 0.65em;
     color: mix(#fff, $gray, 20%);
     font-size: inherit;
   }
@@ -502,7 +502,7 @@ $accent-color: #96B6C5 !default;
   }
 
   li {
-    margin-bottom: 0.4em;
+    margin-bottom: 0.35em;
   }
 }
 
@@ -510,23 +510,23 @@ $accent-color: #96B6C5 !default;
   font-size: 0.9rem;
   line-height: 1.75;
   display: grid;
-  gap: 2rem;
+  gap: 1.75rem;
 
   section {
     background: mix($background-color, $border-color, 80%);
     border: 1px solid mix($border-color, $background-color, 40%);
     border-radius: $border-radius;
     box-shadow: 0 5px 18px rgba($gray, 0.12);
-    padding: 1.25em;
+    padding: 1.1em 1.25em;
 
     @include breakpoint($large) {
-      padding: 1.5em;
+      padding: 1.35em 1.5em;
     }
   }
 
   h3 {
     font-size: 1.05rem;
-    margin-bottom: 0.5em;
+    margin-bottom: 0.45em;
     color: $accent-color;
   }
 
@@ -545,10 +545,10 @@ $accent-color: #96B6C5 !default;
   font-size: 0.9rem;
   line-height: 1.75;
   display: grid;
-  gap: 2rem;
+  gap: 1.75rem;
 
   @include breakpoint($large) {
-    gap: 2.25rem;
+    gap: 2rem;
   }
 
   section {
@@ -556,10 +556,10 @@ $accent-color: #96B6C5 !default;
     border: 1px solid mix($border-color, $background-color, 40%);
     border-radius: $border-radius;
     box-shadow: 0 5px 18px rgba($gray, 0.12);
-    padding: 1.25em;
+    padding: 1.1em 1.25em;
 
     @include breakpoint($large) {
-      padding: 1.5em 2em;
+      padding: 1.35em 1.75em;
     }
   }
 
@@ -571,7 +571,7 @@ $accent-color: #96B6C5 !default;
 
   p {
     font-size: inherit;
-    margin-bottom: 1em;
+    margin-bottom: 0.95em;
   }
 
   &__institution {
@@ -587,7 +587,7 @@ $accent-color: #96B6C5 !default;
 
   .ta-experience {
     border-top: 1px solid mix($border-color, $background-color, 40%);
-    padding-top: 1em;
-    margin-top: 1em;
+    padding-top: 0.9em;
+    margin-top: 0.9em;
   }
 }

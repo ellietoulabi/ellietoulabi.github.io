@@ -27,7 +27,14 @@
     {% endif %}
 
     {% if post.collection == 'publications' %}
-      <h3 class="archive__item-title archive__item-title--publication" itemprop="headline">{{ title }}</h3>
+      <div class="publication-header">
+        <h3 class="archive__item-title archive__item-title--publication" itemprop="headline">
+          {{ title }}
+        </h3>
+        {% if post.paperurl %}
+          <a class="publication-link" href="{{ post.paperurl }}" target="_blank" rel="noopener noreferrer">View Paper</a>
+        {% endif %}
+      </div>
       <p class="archive__item-meta">
         <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }}
       </p>
@@ -37,22 +44,11 @@
       {% if post.excerpt %}
         <p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>
       {% endif %}
-      <p class="archive__item-links">
-        {% if post.paperurl %}
-          <a href="{{ post.paperurl }}" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-pdf" aria-hidden="true"></i> Paper</a>
-        {% endif %}
-        {% if post.paperurl and post.slidesurl %} | {% endif %}
+      <div class="publication-actions">
         {% if post.slidesurl %}
-          <a href="{{ post.slidesurl }}" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-powerpoint" aria-hidden="true"></i> Slides</a>
+          <a href="{{ post.slidesurl }}" target="_blank" rel="noopener noreferrer">Slides</a>
         {% endif %}
-        {% if post.permalink %}
-          <!-- {% if post.paperurl or post.slidesurl %} | {% endif %}
-          <a href="{{ base_path }}{{ post.permalink }}" rel="permalink"><i class="fas fa-info-circle" aria-hidden="true"></i> More details</a> -->
-        {% elsif post.url %}
-          <!-- {% if post.paperurl or post.slidesurl %} | {% endif %}
-          <a href="{{ base_path }}{{ post.url }}" rel="permalink"><i class="fas fa-info-circle" aria-hidden="true"></i> More details</a> -->
-        {% endif %}
-      </p>
+      </div>
     {% else %}
       <h2 class="archive__item-title" itemprop="headline">
         {% if post.link %}
