@@ -400,13 +400,176 @@
   text-transform: uppercase;
 }
 
+$accent-color: #ff5fa2 !default;
+
+.experience-page {
+  font-size: 0.9rem;
+  line-height: 1.75;
+  display: grid;
+  gap: 1.5em;
+
+  @include breakpoint($large) {
+    gap: 2em;
+  }
+
+  .experience-section {
+    background: mix($background-color, $border-color, 80%);
+    border: 1px solid mix($border-color, $background-color, 40%);
+    border-radius: $border-radius;
+    box-shadow: 0 5px 18px rgba($gray, 0.12);
+    padding: 1.25em;
+
+    @include breakpoint($large) {
+      padding: 1.5em 2em;
+    }
+  }
+
+  h3 {
+    font-size: 1.05rem;
+    margin-bottom: 0.35em;
+    color: $accent-color;
+  }
+
+  &__meta {
+    font-style: italic;
+    margin-bottom: 0.75em;
+    color: mix(#fff, $gray, 20%);
+    font-size: inherit;
+  }
+
+  ul {
+    margin: 0;
+    padding-left: 1.1em;
+    font-size: inherit;
+    line-height: inherit;
+  }
+
+  li {
+    margin-bottom: 0.4em;
+  }
+}
+
+.projects-page {
+  font-size: 0.9rem;
+  line-height: 1.75;
+  display: grid;
+  gap: 1.5em;
+
+  @include breakpoint($large) {
+    gap: 2em;
+  }
+
+  .project {
+    background: mix($background-color, $border-color, 80%);
+    border: 1px solid mix($border-color, $background-color, 40%);
+    border-radius: $border-radius;
+    box-shadow: 0 5px 18px rgba($gray, 0.12);
+    padding: 1.25em;
+
+    @include breakpoint($large) {
+      padding: 1.5em 2em;
+    }
+  }
+
+  h3 {
+    font-size: 1.05rem;
+    margin-bottom: 0.35em;
+    color: $accent-color;
+
+    a {
+      font-size: $type-size-7;
+      margin-left: 0.5em;
+      color: mix(#fff, $gray, 25%);
+
+      &:hover {
+        color: $accent-color;
+      }
+    }
+  }
+
+  &__meta {
+    font-style: italic;
+    margin-bottom: 0.75em;
+    color: mix(#fff, $gray, 20%);
+    font-size: inherit;
+  }
+
+  ul {
+    margin: 0;
+    padding-left: 1.1em;
+  }
+
+  li {
+    margin-bottom: 0.4em;
+  }
+}
+
+.skills-page {
+  font-size: 0.9rem;
+  line-height: 1.75;
+  display: grid;
+  gap: 1.5em;
+
+  @include breakpoint($large) {
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.75em;
+  }
+
+  section {
+    background: mix($background-color, $border-color, 80%);
+    border: 1px solid mix($border-color, $background-color, 40%);
+    border-radius: $border-radius;
+    box-shadow: 0 5px 18px rgba($gray, 0.12);
+    padding: 1.25em;
+
+    @include breakpoint($large) {
+      padding: 1.5em;
+    }
+  }
+
+  h3 {
+    font-size: 1.05rem;
+    margin-bottom: 0.5em;
+    color: $accent-color;
+  }
+
+  p, ul {
+    font-size: inherit;
+    line-height: inherit;
+  }
+
+  ul {
+    margin: 0;
+    padding-left: 1.1em;
+  }
+}
+
 .teaching-page {
   font-size: 0.9rem;
   line-height: 1.75;
+  display: grid;
+  gap: 1.5em;
+
+  @include breakpoint($large) {
+    gap: 1.75em;
+  }
+
+  section {
+    background: mix($background-color, $border-color, 80%);
+    border: 1px solid mix($border-color, $background-color, 40%);
+    border-radius: $border-radius;
+    box-shadow: 0 5px 18px rgba($gray, 0.12);
+    padding: 1.25em;
+
+    @include breakpoint($large) {
+      padding: 1.5em 2em;
+    }
+  }
 
   h4 {
     font-size: 1.05rem;
-    margin-bottom: 0.25em;
+    margin-bottom: 0.35em;
+    color: $accent-color;
   }
 
   p {
@@ -422,107 +585,12 @@
   &__dates {
     float: right;
     font-style: italic;
+    color: mix(#fff, $gray, 20%);
   }
 
   .ta-experience {
-    border-bottom: 1px solid mix($border-color, $background-color, 40%);
-    padding-bottom: 1em;
-
-    &:last-child {
-      border-bottom: none;
-    }
-  }
-}
-
-.experience-page {
-  font-size: 0.9rem;
-  line-height: 1.75;
-
-  .experience-section {
-    margin-bottom: 1.5em;
-    border-bottom: 1px solid mix($border-color, $background-color, 40%);
-    padding-bottom: 1em;
-
-    &:last-child {
-      border-bottom: none;
-    }
-  }
-
-  h3 {
-    font-size: 1.05rem;
-    margin-bottom: 0.25em;
-  }
-
-  &__meta {
-    font-style: italic;
-    margin-bottom: 0.5em;
-    color: mix(#fff, $gray, 25%);
-    font-size: inherit;
-  }
-
-  ul {
-    margin: 0 0 1em 1.25em;
-    font-size: inherit;
-    line-height: inherit;
-  }
-
-  li {
-    margin-bottom: 0.4em;
-  }
-}
-
-.projects-page {
-  font-size: 0.9rem;
-  line-height: 1.75;
-
-  .project {
-    margin-bottom: 1.5em;
-    border-bottom: 1px solid mix($border-color, $background-color, 40%);
-    padding-bottom: 1em;
-
-    &:last-child {
-      border-bottom: none;
-    }
-  }
-
-  h3 {
-    font-size: 1.05rem;
-    margin-bottom: 0.25em;
-  }
-
-  &__meta {
-    font-style: italic;
-    margin-bottom: 0.5em;
-    color: mix(#fff, $gray, 25%);
-    font-size: inherit;
-  }
-
-  ul {
-    margin: 0 0 1em 1.25em;
-    font-size: inherit;
-    line-height: inherit;
-  }
-
-  li {
-    margin-bottom: 0.4em;
-  }
-}
-
-.skills-page {
-  font-size: 0.9rem;
-  line-height: 1.75;
-
-  h3 {
-    font-size: 1.05rem;
-    margin-bottom: 0.5em;
-  }
-
-  p, ul {
-    font-size: inherit;
-    line-height: inherit;
-  }
-
-  ul {
-    margin: 0 0 1em 1.25em;
+    border-top: 1px solid mix($border-color, $background-color, 40%);
+    padding-top: 1em;
+    margin-top: 1em;
   }
 }
