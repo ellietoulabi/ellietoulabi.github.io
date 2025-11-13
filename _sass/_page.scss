@@ -433,3 +433,69 @@
     }
   }
 }
+
+.experience-page {
+  font-size: $type-size-6;
+  line-height: 1.7;
+
+  .experience-section {
+    margin-bottom: 1.5em;
+    border-bottom: 1px solid mix($border-color, $background-color, 40%);
+    padding-bottom: 1em;
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  h3 {
+    font-size: $type-size-5;
+    margin-bottom: 0.25em;
+  }
+
+  &__meta {
+    font-style: italic;
+    margin-bottom: 0.5em;
+    color: mix(#fff, $gray, 25%);
+  }
+}
+
+.projects-page {
+  font-size: $type-size-6;
+  line-height: 1.7;
+
+  .project {
+    margin-bottom: 1.5em;
+    border-bottom: 1px solid mix($border-color, $background-color, 40%);
+    padding-bottom: 1em;
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  h3 {
+    font-size: $type-size-5;
+    margin-bottom: 0.25em;
+  }
+
+  &__meta {
+    font-style: italic;
+    margin-bottom: 0.5em;
+    color: mix(#fff, $gray, 25%);
+  }
+}
+
+.skills-page {
+  font-size: $type-size-6;
+  line-height: 1.7;
+
+  h3 {
+    font-size: $type-size-5;
+    margin-bottom: 0.5em;
+  }
+
+  ul {
+    margin: 0 0 1em 1.25em;
+  }
+}
