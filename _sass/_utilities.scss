@@ -196,8 +196,20 @@ body:hover .visually-hidden button {
 /* social icons*/
 
 .social-icons {
-  .fa {
-    color: #000;
+  .fa,
+  .fas,
+  .fab,
+  .far,
+  .ai {
+    color: #494e52;
+  }
+
+  .fa:hover,
+  .fas:hover,
+  .fab:hover,
+  .far:hover,
+  .ai:hover {
+    color: $accent-color;
   }
 
   .fa-bluesky,
