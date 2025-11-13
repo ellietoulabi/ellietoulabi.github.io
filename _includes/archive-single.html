@@ -46,8 +46,8 @@
           <a href="{{ post.slidesurl }}" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-powerpoint" aria-hidden="true"></i> Slides</a>
         {% endif %}
         {% if post.permalink %}
-          {% if post.paperurl or post.slidesurl %} | {% endif %}
-          <a href="{{ base_path }}{{ post.permalink }}" rel="permalink"><i class="fas fa-info-circle" aria-hidden="true"></i> More details</a>
+          <!-- {% if post.paperurl or post.slidesurl %} | {% endif %}
+          <a href="{{ base_path }}{{ post.permalink }}" rel="permalink"><i class="fas fa-info-circle" aria-hidden="true"></i> More details</a> -->
         {% elsif post.url %}
           {% if post.paperurl or post.slidesurl %} | {% endif %}
           <a href="{{ base_path }}{{ post.url }}" rel="permalink"><i class="fas fa-info-circle" aria-hidden="true"></i> More details</a>
