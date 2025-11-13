@@ -563,26 +563,31 @@ $accent-color: #96B6C5 !default;
     }
   }
 
-  h4 {
+  h3 {
     font-size: 1.05rem;
     margin: 0.2rem 0 0.35rem 0.2rem;
     color: $accent-color;
   }
 
-  p {
-    font-size: inherit;
-    margin-bottom: 0.95em;
+  ul {
+    margin: 0;
+    padding-left: 1.1em;
+  }
+
+  li {
+    margin-bottom: 0.35em;
   }
 
   &__institution {
     font-style: italic;
-    margin-bottom: 0.25em;
+    color: #959ba0;
+    margin-bottom: 0.6em;
   }
 
   &__dates {
-    float: right;
     font-style: italic;
-    color: mix(#fff, $gray, 20%);
+    color: #959ba0;
+    margin-left: 0.35em;
   }
 
   .ta-experience {
