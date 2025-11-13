@@ -10,7 +10,7 @@
   }
 
   @include breakpoint($large) {
-    @include span(10 of 12 last);
+    @include span(11 of 12 last);
     @include prefix(0.5 of 12);
   }
 
@@ -52,6 +52,7 @@
 .archive__item-title--publication {
   font-size: $type-size-4;
   margin-bottom: 0.5em;
+  font-family: $global-font-family;
 }
 
 .archive__item-meta {
@@ -79,11 +80,6 @@
     
     i {
       margin-right: 0.25em;
-    }
-    
-    &:hover {
-      text-decoration: underline;
-      color: mix(#000, $primary-color, 25%);
     }
   }
 }
@@ -144,10 +140,6 @@
 .archive__item:hover {
   .archive__item-teaser {
     box-shadow: 0 0 10px rgba(#000, 0.25);
-  }
-
-  .archive__item-title {
-    text-decoration: underline;
   }
 }
 
