@@ -45,58 +45,33 @@ layout: default
       {% endunless %}
 
       <section class="page__content" itemprop="text">
-        {% if page.collection == 'publications' %}
-          {% if page.abstract %}
-            <div class="publication-abstract">
-              {{ page.abstract | markdownify }}
-            </div>
-          {% elsif content %}
-            <div class="publication-abstract">
-              {{ content }}
-            </div>
-          {% endif %}
-          
-          {% if page.paperurl or page.slidesurl %}
-            <div class="publication-links">
-              {% if page.paperurl %}
-                <a href="{{ page.paperurl }}" target="_blank" rel="noopener noreferrer" class="btn btn--primary"><i class="fas fa-file-pdf" aria-hidden="true"></i> Download Paper</a>
-              {% endif %}
-              {% if page.slidesurl %}
-                <a href="{{ page.slidesurl }}" target="_blank" rel="noopener noreferrer" class="btn btn--primary"><i class="fas fa-file-powerpoint" aria-hidden="true"></i> Download Slides</a>
-              {% endif %}
-            </div>
-          {% endif %}
-        {% else %}
-          {{ content }}
-          
-          {% if page.citation and page.paperurl and page.slidesurl %}
-            <p style="font-size: smaller">{{ page.citation }}<br /><a href="{{ page.paperurl }}">Download Paper</a> | <a href="{{ page.slidesurl }}">Download Slides</a></p>
-          {% elsif page.citation and page.paperurl %}
-            <p style="font-size: smaller">{{ page.citation }}<br /><a href="{{ page.paperurl }}">Download Paper</a></p>
-          {% elsif page.citation and page.slidesurl %}
-            <p style="font-size: smaller">{{ page.citation }}<br /><a href="{{ page.slidesurl }}">Download Slides</a></p>
-          {% elsif page.citation %}
-            <p style="font-size: smaller">{{ page.citation }}</p>
-          {% elsif page.slidesurl %}
-            <p style="font-size: smaller"><a href="{{ page.slidesurl }}">Download Slides</a></p>
-          {% endif %}
+        {{ content }}
 
-          {% if page.link %}<div><a href="{{ page.link }}" class="btn">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
+        {% if page.citation and page.paperurl and page.slidesurl %}
+          <p style="font-size: smaller">Recommended citation: {{ page.citation }}<br /><a href="{{ page.paperurl }}">Download Paper</a> | <a href="{{ page.slidesurl }}">Download Slides</a></p>
+        {% elsif page.citation and page.paperurl %}
+          <p style="font-size: smaller">Recommended citation: {{ page.citation }}<br /><a href="{{ page.paperurl }}">Download Paper</a></p>
+        {% elsif page.citation and page.slidesurl %}
+          <p style="font-size: smaller">Recommended citation: {{ page.citation }}<br /><a href="{{ page.slidesurl }}">Download Slides</a></p>
+        {% elsif page.citation %}
+          <p style="font-size: smaller">Recommended citation: {{ page.citation }}</p>
+        {% elsif page.slidesurl %}
+          <p style="font-size: smaller"><a href="{{ page.slidesurl }}">Download Slides</a></p>
         {% endif %}
+
+        {% if page.link %}<div><a href="{{ page.link }}" class="btn">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
       </section>
 
-      {% unless page.collection == 'publications' %}
-        <footer class="page__meta">
-          {% if site.data.ui-text[site.locale].meta_label %}
-            <h4 class="page__meta-title">{{ site.data.ui-text[site.locale].meta_label }}</h4>
-          {% endif %}
-          {% include page__taxonomy.html %}
-        </footer>
+      <footer class="page__meta">
+        {% if site.data.ui-text[site.locale].meta_label %}
+          <h4 class="page__meta-title">{{ site.data.ui-text[site.locale].meta_label }}</h4>
+        {% endif %}
+        {% include page__taxonomy.html %}
+      </footer>
 
-        {% if page.share %}{% include social-share.html %}{% endif %}
+      {% if page.share %}{% include social-share.html %}{% endif %}
 
-        {% include post_pagination.html %}
-      {% endunless %}
+      {% include post_pagination.html %}
     </div>
 
     {% if site.comments.provider and page.comments %}
