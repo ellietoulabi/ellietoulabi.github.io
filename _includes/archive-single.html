@@ -6,10 +6,14 @@
   {% assign teaser = site.teaser %}
 {% endif %}
 
-{% if post.id %}
-  {% assign title = post.title | markdownify | remove: "<p>" | remove: "</p>" %}
+{% if post.title %}
+  {% if post.id %}
+    {% assign title = post.title | markdownify | remove: "<p>" | remove: "</p>" %}
+  {% else %}
+    {% assign title = post.title %}
+  {% endif %}
 {% else %}
-  {% assign title = post.title %}
+  {% assign title = "Untitled" %}
 {% endif %}
 
 <div class="{{ include.type | default: "list" }}__item">
@@ -26,11 +30,15 @@
       </div>
     {% endif %}
 
-    {% if post.collection == 'publications' %}
-      <h3 class="archive__item-title" itemprop="headline">{{ title }}</h3>
-      <p class="archive__item-meta">
-        <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }}
-      </p>
+    {% if post.collection == 'publications' or post.venue or post.paperurl %}
+      {% if title and title != "" %}
+        <h3 class="archive__item-title" itemprop="headline">{{ title }}</h3>
+      {% endif %}
+      {% if post.venue or post.date %}
+        <p class="archive__item-meta">
+          {% if post.venue and post.venue != "" %}<i>{{ post.venue }}</i>{% endif %}{% if post.venue and post.venue != "" and post.date %}, {% endif %}{% if post.date and post.date != "1900-01-01" %}{{ post.date | date: "%Y" }}{% endif %}
+        </p>
+      {% endif %}
       {% if post.citation %}
         <p class="archive__item-citation">{{ post.citation }}</p>
       {% endif %}
