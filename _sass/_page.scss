@@ -66,13 +66,8 @@
   
   /* Publication detail page styles */
   .publication-abstract {
-    margin: 1em 0 2em 0;
-    padding: 1em;
-    background-color: mix($background-color, $border-color, 95%);
-    border-left: 3px solid $primary-color;
-    border-radius: 3px;
+    margin: 0 0 2em 0;
     line-height: 1.7;
-    text-align: justify;
     
     p {
       margin-bottom: 1em;
@@ -80,19 +75,6 @@
       &:last-child {
         margin-bottom: 0;
       }
-    }
-  }
-  
-  .publication-citation {
-    margin: 2em 0;
-    padding: 1em;
-    background-color: mix($background-color, $lighter-gray, 90%);
-    border-radius: 3px;
-    
-    p {
-      margin: 0;
-      font-style: italic;
-      line-height: 1.6;
     }
   }
   

@@ -47,21 +47,12 @@ layout: default
       <section class="page__content" itemprop="text">
         {% if page.collection == 'publications' %}
           {% if page.abstract %}
-            <h2>Abstract</h2>
             <div class="publication-abstract">
               {{ page.abstract | markdownify }}
             </div>
           {% elsif content %}
-            <h2>Abstract</h2>
             <div class="publication-abstract">
               {{ content }}
-            </div>
-          {% endif %}
-          
-          {% if page.citation %}
-            <div class="publication-citation">
-              <h2>Citation</h2>
-              <p>{{ page.citation }}</p>
             </div>
           {% endif %}
           
