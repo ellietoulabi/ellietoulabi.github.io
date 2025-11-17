@@ -10,7 +10,7 @@ redirect_from:
 <div class="about-page">
 
 
-<p> Hi, I’m Elaheh. I am a machine learning researcher and applied scientist specializing in deep learning and reinforcement learning. My primary research interest lies in using data-driven machine learning models to advance interpretable and robust decision-making systems. My work bridges academic research and real-world applications: I build autonomous agents capable of sequential decision-making, extract actionable insights from structured and unstructured data, and design end-to-end ML systems from prototype to production with rigorous evaluation. I thrive in cross-disciplinary settings and enjoy mentoring stakeholders to transform complex ideas into meaningful impact.
+<p> Hi, I’m Elaheh! I am a machine learning researcher and applied scientist specializing in <b>deep learning</b> and <b>reinforcement learning</b>. My primary research interest lies in using <b>data-driven machine learning</b> models to advance interpretable and robust decision-making systems. My work bridges academic research and real-world applications: I build autonomous agents capable of <b>sequential decision-making</b>, extract actionable insights from <b>structured</b> and <b>unstructured</b> data, and design end-to-end ML systems from <b>prototype to production</b> with rigorous evaluation. I thrive in cross-disciplinary settings and enjoy mentoring stakeholders to transform complex ideas into meaningful impact.
 
 </p>
 <p>

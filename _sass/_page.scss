@@ -487,12 +487,8 @@ $accent-color: #96B6C5 !default;
 
   .project-link {
     font-size: $type-size-6;
-    color: #EAC7C7;
-    text-decoration: none;
-
-    &:hover {
-      text-decoration: underline;
-    }
+    color: #96B6C5;
+    text-decoration: underline;
   }
 
   ul {
@@ -636,12 +632,8 @@ $accent-color: #96B6C5 !default;
 
   .publication-link {
     font-size: $type-size-6;
-    color: #EAC7C7;
-    text-decoration: none;
-
-    &:hover {
-      text-decoration: underline;
-    }
+    color: #96B6C5;
+    text-decoration: underline;
   }
 
   .publication-meta {
@@ -661,12 +653,7 @@ $accent-color: #96B6C5 !default;
   line-height: 1.75;
 
   a {
-    color: #EAC7C7;
-    text-decoration: none;
-
-    &:hover,
-    &:focus {
-      text-decoration: underline;
-    }
+    color: #96B6C5;
+    text-decoration: underline;
   }
 }

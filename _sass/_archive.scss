@@ -78,11 +78,11 @@ $accent-color: #96B6C5 !default;
   
   a {
     margin-right: 0.75em;
-    text-decoration: none;
-    color: $primary-color;
+    text-decoration: underline;
+    color: #96B6C5;
 
     &:hover {
-      color: $accent-color;
+      color: #96B6C5;
     }
     
     i {
@@ -187,25 +187,17 @@ $accent-color: #96B6C5 !default;
 
 .publication-link {
   font-size: $type-size-6;
-  color: $accent-color;
-  text-decoration: none;
-
-  &:hover {
-    text-decoration: underline;
-  }
+  color: #96B6C5;
+  text-decoration: underline;
 }
 
 .publication-actions {
   margin-top: 1em;
 
   a {
-    color: $accent-color;
-    text-decoration: none;
+    color: #96B6C5;
+    text-decoration: underline;
     font-size: $type-size-6;
-
-    &:hover {
-      text-decoration: underline;
-    }
   }
 }
 
