@@ -24,9 +24,9 @@ author:
   avatar           : "profile.JPG"
   name             : "Elaheh Toulabinejad"
   pronouns         : # example: "she/her"  
-  bio              : "Master Student"
-  location         : "Edmonton, Alberta, Canada"
-  employer         : "University of Alberta"
+  bio              : "Machine Learning Researcher"
+  location         : #"Edmonton, Alberta, Canada"
+  employer         : #"University of Alberta"
   uri              : # URL
   email            : "toulabin@ualberta.ca" 
 
